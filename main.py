@@ -1,28 +1,4 @@
 #!/usr/bin/env python3
-"""
-run_experiment.py — DoC-OOD Experiment Runner
-==============================================
-
-End-to-end pipeline for "Predicting with Confidence on Unseen Distributions"
-(Guillory et al., 2021) on PACS, OfficeHome, and DomainNet.
-
-Usage
------
-# Full experiment on PACS, all target domains, all methods:
-    python run_experiment.py --dataset pacs --data_root /data/pacs
-
-# Skip training (use existing checkpoint):
-    python run_experiment.py --dataset pacs --data_root /data/pacs \
-        --checkpoint results/pacs/art_painting/erm_best.pt --skip_train
-
-# Single target domain, lightweight backbone:
-    python run_experiment.py --dataset pacs --data_root /data/pacs \
-        --target_domain photo --backbone resnet18 --epochs 20
-
-# DomainNet (large — reduce batch size):
-    python run_experiment.py --dataset domain_net --data_root /data/domain_net \
-        --backbone resnet50 --batch_size 32 --epochs 30
-"""
 
 import argparse
 import json
