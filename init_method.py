@@ -1,3 +1,4 @@
+# listing down the methods to predict out-of-distribution generalization
 from avg_conf           import AverageConfidence, AverageConfidenceTempScaled
 from diff_conf          import DifferenceOfConfidences, DifferenceOfConfidencesFeat
 from diff_ent          import DifferenceOfEntropy
